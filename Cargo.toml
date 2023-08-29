@@ -1,7 +1,10 @@
 [package]
 name = "prem"
+authors = ["Filippo Pedrazzini <filippo@premai.io>"]
 version = "0.1.0"
 edition = "2021"
+description = "Prem Rust SDK for interacting with Prem Ecosystem."
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
