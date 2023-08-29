@@ -1,2 +1,3 @@
-# prem-rust-sdk
+# Prem Rust SDK
+
 Rust SDK to Interact with Prem Ecosystem
