@@ -1,0 +1,17 @@
+repos:
+  - repo: local
+    hooks:
+    - id: clippy
+      name: Run Clippy
+      language: system
+      entry: cargo clippy --
+      args: ['-D', 'warnings']
+      types: [rust]
+      pass_filenames: false
+    - id: rustfmt
+      name: Run Rustfmt
+      language: system
+      entry: cargo fmt --
+      args: ['--check']
+      types: [rust]
+      pass_filenames: false
