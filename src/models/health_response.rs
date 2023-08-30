@@ -6,10 +6,6 @@ pub struct HealthResponse {
 
 impl HealthResponse {
     pub fn new(status: bool) -> HealthResponse {
-        HealthResponse {
-            status,
-        }
+        HealthResponse { status }
     }
 }
-
-

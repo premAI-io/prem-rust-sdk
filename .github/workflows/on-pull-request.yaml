@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  publish:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
@@ -16,10 +16,15 @@ jobs:
           toolchain: stable
           override: true
 
-      - name: Run Tests
-        run: cargo test
-
       - name: Check for Linting Issues
         run: |
           rustup component add clippy
           cargo clippy -- -D warnings
+        
+      - name: Check Code Formatting
+        run: |
+          rustup component add rustfmt
+          cargo fmt -- --check
+      
+      - name: Run Tests
+        run: cargo test

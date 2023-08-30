@@ -22,7 +22,7 @@ async fn test_chat_completions() {
         presence_penalty: None,
         frequence_penalty: None,
         logit_bias: None,
-        user: None
+        user: None,
     };
 
     let result = lib::apis::default_api::chat(&config, chat_completion_input).await;
@@ -30,7 +30,7 @@ async fn test_chat_completions() {
     match result {
         Ok(response) => {
             assert_eq!(response.model, "./ml/models/vicuna-7b-q4.bin".to_owned());
-        },
+        }
         Err(e) => panic!("API call failed: {:?}", e),
     }
 }

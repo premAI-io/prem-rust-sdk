@@ -1,11 +1,9 @@
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
-pub struct LocationInner {
-}
+pub struct LocationInner {}
 
 impl LocationInner {
     pub fn new() -> LocationInner {
-        LocationInner {
-        }
+        LocationInner {}
     }
 }
 

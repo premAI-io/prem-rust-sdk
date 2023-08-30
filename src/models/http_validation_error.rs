@@ -6,9 +6,7 @@ pub struct HttpValidationError {
 
 impl HttpValidationError {
     pub fn new() -> HttpValidationError {
-        HttpValidationError {
-            detail: None,
-        }
+        HttpValidationError { detail: None }
     }
 }
 

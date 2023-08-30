@@ -9,13 +9,11 @@ pub struct ValidationError {
 }
 
 impl ValidationError {
-    pub fn new(loc: Vec<crate::models::LocationInner>, msg: String, r#type: String) -> ValidationError {
-        ValidationError {
-            loc,
-            msg,
-            r#type,
-        }
+    pub fn new(
+        loc: Vec<crate::models::LocationInner>,
+        msg: String,
+        r#type: String,
+    ) -> ValidationError {
+        ValidationError { loc, msg, r#type }
     }
 }
-
-

@@ -23,7 +23,7 @@ pub struct ChatCompletionInput {
     #[serde(rename = "logit_bias", skip_serializing_if = "Option::is_none")]
     pub logit_bias: Option<serde_json::Value>,
     #[serde(rename = "user", skip_serializing_if = "Option::is_none")]
-    pub user: Option<String>
+    pub user: Option<String>,
 }
 
 impl ChatCompletionInput {
@@ -40,9 +40,7 @@ impl ChatCompletionInput {
             presence_penalty: None,
             frequence_penalty: None,
             logit_bias: None,
-            user: None
+            user: None,
         }
     }
 }
-
-

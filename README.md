@@ -71,6 +71,12 @@ We use `clippy` to lint our code. To run the linter, use:
 cargo clippy
 ```
 
+We use `rustfmt` to format our code. To run the formatter, use:
+
+```bash
+cargo fmt
+```
+
 ### Tests
 
 Run the tests using:

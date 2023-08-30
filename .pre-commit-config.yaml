@@ -8,3 +8,10 @@ repos:
       args: ['-D', 'warnings']
       types: [rust]
       pass_filenames: false
+    - id: rustfmt
+      name: Run Rustfmt
+      language: system
+      entry: cargo fmt --
+      args: ['--check']
+      types: [rust]
+      pass_filenames: false

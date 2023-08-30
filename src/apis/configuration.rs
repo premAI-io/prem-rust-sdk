@@ -1,7 +1,7 @@
 #[derive(Debug, Clone)]
 pub struct Configuration {
     pub base_path: String,
-    pub client: reqwest::Client
+    pub client: reqwest::Client,
 }
 
 impl Configuration {
@@ -14,8 +14,7 @@ impl Default for Configuration {
     fn default() -> Self {
         Configuration {
             base_path: "http://localhost".to_owned(),
-            client: reqwest::Client::new()
-
+            client: reqwest::Client::new(),
         }
     }
 }
