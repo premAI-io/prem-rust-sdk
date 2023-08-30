@@ -51,3 +51,30 @@ cargo doc --open
 ```
 
 ## Author
+
+## Contributing
+
+### Code Style and Linting
+
+### Configure `pre-commit for automatic linting
+
+Make sure you have `pre-commit` installed. You can check [here](https://pre-commit.com/#install) for installation instructions.
+
+```bash
+# install `pre-commit` hooks
+pre-commit install
+```
+
+We use `clippy` to lint our code. To run the linter, use:
+
+```bash
+cargo clippy
+```
+
+### Tests
+
+Run the tests using:
+
+```bash
+cargo test
+```

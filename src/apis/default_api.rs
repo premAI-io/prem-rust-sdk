@@ -20,7 +20,7 @@ pub enum HealthV1GetError {
 }
 
 
-pub async fn chat_completions_v1_chat_completions_post(configuration: &configuration::Configuration, chat_completion_input: crate::models::ChatCompletionInput) -> Result<crate::models::ChatCompletionResponse, Error<ChatCompletionsV1ChatCompletionsPostError>> {
+pub async fn chat(configuration: &configuration::Configuration, chat_completion_input: crate::models::ChatCompletionInput) -> Result<crate::models::ChatCompletionResponse, Error<ChatCompletionsV1ChatCompletionsPostError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;
@@ -46,7 +46,7 @@ pub async fn chat_completions_v1_chat_completions_post(configuration: &configura
 }
 
 
-pub async fn health_v1_get(configuration: &configuration::Configuration, ) -> Result<crate::models::HealthResponse, Error<HealthV1GetError>> {
+pub async fn health(configuration: &configuration::Configuration, ) -> Result<crate::models::HealthResponse, Error<HealthV1GetError>> {
     let local_var_configuration = configuration;
 
     let local_var_client = &local_var_configuration.client;

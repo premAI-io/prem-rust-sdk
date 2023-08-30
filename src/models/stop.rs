@@ -9,4 +9,8 @@ impl Stop {
     }
 }
 
-
+impl Default for Stop {
+    fn default() -> Stop {
+        Stop::new()
+    }
+}
